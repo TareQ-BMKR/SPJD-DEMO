@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <!-- In the <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <link rel="icon" type="image/png" href="icons/icon2.png">
+    <title>HOME | SPJD</title>
+</head>
+<body>
+    <header>
+    <div class="sidebar">
+        <div class="navbar2">
+            <nav class="nav2">
+                <div id="logo2">
+                    <a href="home.html"><img src="imgs/Logo PIECES JAPONAISES DIRECT.png" alt="SPJD LOGO" width="150px"></a>
+                </div>
+                <div class="menu2">
+                    <ul>
+                        <li onclick="hideside()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                     <li><a href="home.html">Home</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="navbar">
+        <nav>
+                <div id="logo">
+            <a href="home.html"><img src="imgs/Logo PIECES JAPONAISES DIRECT.png" alt="SPJD LOGO" width="150px"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="hideOnmobile"><a href="home.html">Home</a></li>
+                    <li  class="hideOnmobile"><a href="products.html">Products</a>
+                        <ul class="dropdown">
+                                <li><a href="Suspension.html">Suspension</a></li>
+                                <li><a href="Brake.html">Brake</a></li>
+                                <li><a href="Transmission.html">Transmission</a></li>
+                                <li><a href="Engine.html">Engine</a></li>
+                                <li><a href="Electrical.html">Electrical</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnmobile"><a href="#">About Us</a></li>
+                    <li class="hideOnmobile"><a href="contactus.html">Contact Us</a></li>
+                    <li onclick="showsidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -900 900 600" width="30px" fill="#1c2e57"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <section>
+        <div class="Home" style="background-image:url(imgs/AdobeStock_3714303172.png);   background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    ">
+            <div class="txt1">
+                <div>
+                    <div>
+                         <p id="intro">Welcome to SPJD – Your source for Japanese car parts insights.</p>
+                    </div>
+
+                    <div>
+                       <br><br> <p id="description">We deliver high-quality auto spare parts from Asia to customers worldwide. At SPJD, we're committed to continuous improvement in both product quality and customer service.</p>
+                    </div>
+                    <a href="contactus.html"><button id="cnt-btn">Contact Us</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="small-description">
+        <div class="small-description-div">
+            <div id="txt">
+                <p id="p1">
+                    At SPJD , we are committed to offering only the highest quality spares for your cherished vehicles.
+                </p> 
+                <p id="p2">
+                Whether you are looking for engine components, braking system parts, suspension and
+                steering components, electrical and lighting solutions, or exterior and interior upgrades, we have it
+                all. Our team of experts meticulously inspects each used spare to ensure it meets our strict quality
+                standards, providing you with the assurance that you are getting reliable and genuine parts.
+                </p>
+            </div>
+            <div id="img-side">
+                <img src="imgs/img.png" alt="Parts You Trust." width="500px">
+            </div>
+        </div>
+        </div>
+        
+        <!-- -----------gpt----- -->
+<h2 align="center" style="margin-top:50px;" id="brands">AVAILABLE BRANDS</h2>
+
+<div class="swiper mySwiper1">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="imgs/suzuki.png" alt="suzuki" width="70px"/></div>
+    <div class="swiper-slide"><img src="imgs/honda.png" alt="honda" width="70px"/></div>
+    <div class="swiper-slide"><img src="imgs/hyundai.png" alt="hyundai" width="70px" /></div>
+    <div class="swiper-slide"><img src="imgs/toyota.png" alt="Toyota" width="70px" /></div>
+    <div class="swiper-slide"><img src="imgs/mitsubishi.png" alt="Mazda" width="70px" /></div>
+    <div class="swiper-slide"><img src="imgs/kia.png" alt="kia" width="70px" /></div> 
+    <div class="swiper-slide"><img src="imgs/isuzu.png" alt="isuzu" width="70px"/></div> 
+  </div>
+</div>
+<div class="swiper mySwiper2">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="imgs/marks/ayon.png" alt="Ford" width="100px"/></div>
+    <div class="swiper-slide"><img src="imgs/marks/daichi2.png" alt="BMW" width="100px"/></div>
+    <div class="swiper-slide"><img src="imgs/marks/kiboh.png" alt="Chevrolet" width="100px"/></div>
+    <div class="swiper-slide"><img src="imgs/marks/sunami.png" alt="Nissan" width="100px"/></div>
+    <div class="swiper-slide"><img src="imgs/marks/kiboh.png" alt="Chevrolet" width="100px"/></div>
+    <div class="swiper-slide"><img src="imgs/marks/daichi2.png" alt="BMW" width="100px"/></div>
+  </div>
+</div>
+        <!-- -------------------------->
+
+        <div id="iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.4142474784103!2d-5.546574888290808!3d33.853213573120854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda04531dcc42a51%3A0x81bb1cad669505d!2sSte%20INDM%20S.A.R.L!5e0!3m2!1sfr!2sma!4v1752793782891!5m2!1sfr!2sma" width="1400" height="500"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+        </div>
+    </section>
+
+
+    <div id="head">
+        <p><img src="icons/call.png" alt="" width="20px">Call us : 05-35-53-96-26</p>
+        <p><img src="icons/address.png" alt="" width="20px">10 bis Rue N° 12 Hay AL-ATLAS III sidi bouzekri</p>
+        <p><img src="icons/email.png" alt="" width="20px"> SPJD.SERVICE@HOTMAIL.COM</p>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(232, 232, 232);
+    min-height: 100vh ;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(28, 46, 87,0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+
+
+.sidebar li{
+    width: 100%;
+    margin-top: 20px;
+}
+.sidebar a{
+    width: 100%;
+    color: #e1e1e1;
+}
+@media(max-width:768px){
+    .hideOnmobile{
+        display: none;
+    }
+}
+
+
+
+
+#head{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family:"Spongition";
+}
+
+#intro{
+    text-decoration: none;
+    color: #e1e1e1;
+    font-family:"Spongition";
+    font-weight: 600;
+    font-size: 47px; 
+    max-width: 800px;
+}
+
+
+.txt1{
+    padding: 90px;
+    display: block;
+    background-color: #03092ca7;
+}
+
+
+
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#description{
+    text-decoration: none;
+    color: #e1e1e1;
+    font-family:"Spongition";
+    font-weight: 300;
+    font-size: 20px; 
+    max-width: 600px;
+}
+#txt{
+    font-family:'Spongition' ;
+    font-size: 60px;
+    font-weight: 900;
+}
+#txt #p2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* pushes logo left, menu right */
+    align-items: center;            /* aligns them vertically in the same line */
+    padding: 10px 40px;             /* space inside navbar */
+    max-width: 1800px;
+    width: 100%;
+}
+
+.nav2{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+max-width: 1800px;
+gap: 20px; 
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #e1e1e1;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 50px; /* smaller gap for better scaling */
+    align-items: center;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+    position: relative; /* makes dropdown align under its parent */
+}
+
+ul a {
+    text-decoration: none;
+    color: #1c2e57;
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 8px 12px;
+    display: block; /* helps with hover area */
+}
+
+ul a:hover {
+    color: #f49817;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    top: 100%;  /* directly below parent */
+    left: 0;
+    background: #e1e1e1;
+    padding: 10px 0;
+    min-width: 180px; /* keeps width consistent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 999;
+    
+}
+
+ul li ul.dropdown li {
+    display: block;
+    padding: 5px 15px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+#iframe{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+#cnt-btn{
+    background-color: #e1e1e1;
+    color: #0e1328;
+    border: none;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    font-family:"Spongition";
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.small-description-div{
+    display: flex;
+    max-width: 1400px;
+    color: #0e1328;
+    gap: 50px;
+    
+}
+#small-description{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+/* ---------------------------gpt */
+
+h2#brands {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  color:  #0e1328;
+  font-weight: 800;
+}
+
+/* Container styles for each swiper */
+.swiper {
+  width: 100%;
+  margin: 30px auto; /* center horizontally with some vertical margin */
+  padding: 10px 0;
+  background: linear-gradient(to right, #0e1328, #1c2e57);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Style each slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Make images inside slides nicely sized */
+.swiper-slide img {
+  padding: 10px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+/* Optional: add a subtle hover scale effect on images */
+.swiper-slide img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+/* --------------------- */
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+    }
+    
+    #intro {
+        font-size: 1.8rem;
+    }
+    
+    #description {
+        font-size: 1rem;
+    }
+    
+    .txt1 {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    #p1 {
+        font-size: 1.5rem;
+    }
+    
+    #p2 {
+        font-size: 1rem;
+    }
+    
+    #head {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .small-description-div #txt #p1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .small-description-div{
+                flex-direction: column;
+        align-items: center;
+        
+    }
+     .small-description-div #img-side{
+        width: 500px;
+    }
+    
+    
+    #head p {
+        justify-content: center;
+    }
+    
+    #iframe iframe {
+        height: 300px;
+    }
+}
+
+@media (min-width: 495) {
+    #logo img, #logo2 img {
+        width: 120px;
+       
+    }
+    
+    #intro {
+        font-size: 1.5rem;
+    }
+    
+    .Home {
+        width:100%;
+        height: 100%;
+    }
+    
+    #p1 {
+        font-size: 1.3rem;
+    }
+    
+    #cnt-btn {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+        #head {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+   .small-description-div #txt #p1{
+        font-size: 1%;
+        margin-bottom: 30px;
+    }
+    .small-description-div{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+     .small-description-div #img-side{
+        width: 120px;
+    }
+    
+    
+    
+    #iframe iframe {
+        height: 250px;
+    }
+    
+    .swiper-slide img {
+        max-width: 80px;
+        gap: 50px;
+    }
+
+}
+
+/* Touch improvements for mobile */
+@media (hover: none) {
+    .dropdown:hover {
+        display: none;
+    }
+    
+    /* Alternative mobile dropdown solution might be needed */
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}

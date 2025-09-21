@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(232, 232, 232);
+    min-height: 100vh ;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(28, 46, 87,0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+
+
+.sidebar li{
+    width: 100%;
+    margin-top: 20px;
+}
+.sidebar a{
+    width: 100%;
+    color: #e1e1e1;
+}
+@media(max-width:800px){
+    .hideOnmobile{
+        display: none;
+    }
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* pushes logo left, menu right */
+    align-items: center;            /* aligns them vertically in the same line */
+    padding: 10px 40px;             /* space inside navbar */
+    max-width: 1800px;
+    width: 100%;
+}
+
+.nav2{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+max-width: 1800px;
+gap: 20px; 
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #e1e1e1;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 50px; /* smaller gap for better scaling */
+    align-items: center;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+    position: relative; /* makes dropdown align under its parent */
+}
+
+ul a {
+    text-decoration: none;
+    color: #1c2e57;
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 8px 12px;
+    display: block; /* helps with hover area */
+}
+
+ul a:hover {
+    color: #f49817;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    top: 100%;  /* directly below parent */
+    left: 0;
+    background: #e1e1e1;
+    padding: 10px 0;
+    min-width: 180px; /* keeps width consistent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 999;
+    
+}
+
+ul li ul.dropdown li {
+    display: block;
+    padding: 5px 15px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+#iframe{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+#Suspensionimg {
+  background-image: url(imgs/Suspension.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Suspensionimg1{
+
+  background-color: rgba(14, 19, 40, 0.4); /* More standard RGBA */
+  width: 100%;
+  
+}
+.Suspensionimg1 h1{
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #e1e1e1;
+  font-size: 6vw; /* Responsive font size */
+  font-weight: 800;
+  padding: 120PX ;
+}

@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(232, 232, 232);
+    min-height: 100vh ;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(28, 46, 87,0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* pushes logo left, menu right */
+    align-items: center;            /* aligns them vertically in the same line */
+    padding: 10px 40px;             /* space inside navbar */
+    max-width: 1800px;
+    width: 100%;
+}
+
+.nav2{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+max-width: 1800px;
+gap: 20px; 
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #e1e1e1;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 50px; /* smaller gap for better scaling */
+    align-items: center;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+    position: relative; /* makes dropdown align under its parent */
+}
+
+ul a {
+    text-decoration: none;
+    color: #1c2e57;
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 8px 12px;
+    display: block; /* helps with hover area */
+}
+
+ul a:hover {
+    color: #f49817;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    top: 100%;  /* directly below parent */
+    left: 0;
+    background: #e1e1e1;
+    padding: 10px 0;
+    min-width: 180px; /* keeps width consistent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 999;
+    
+}
+
+ul li ul.dropdown li {
+    display: block;
+    padding: 5px 15px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.sidebar li{
+    width: 100%;
+    margin-top: 20px;
+}
+.sidebar a{
+    width: 100%;
+    color: #e1e1e1;
+}
+
+
+#head{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family:"Spongition";
+}
+
+
+.contactimg1{
+
+  background-color: rgba(14, 19, 40, 0.4); /* More standard RGBA */
+  width: 100%;
+  
+}
+.contactimg1 h1{
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #e1e1e1;
+  font-size: 6vw; /* Responsive font size */
+  font-weight: 800;
+  padding: 120PX ;
+}
+
+
+
+
+form{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 50px;
+    color: #1c2e57;
+    
+}
+
+#i1 input {
+    width: 500px;
+    height: 40px;
+    border: 2;
+    border-color: #1c2e57;
+    border-style:solid ;
+    padding-left: 10px;
+    outline: none;
+    font-family: 'Spongition'; 
+    border-radius: 10px; 
+}
+
+#i1{
+    display: flex;
+    gap: 50px;
+    
+}
+#i2 input {
+    width: 500px;
+    height: 40px;
+    border: 2;
+    border-color: #1c2e57;
+    border-style:solid ;
+    padding-left: 10px;
+    outline: none;
+    font-family: 'Spongition';
+     border-radius: 10px; 
+}
+#i2{
+    display: flex;
+    gap: 50px;
+        
+}
+
+#textarea{
+    width: 1050px;
+    height: 200px;
+    border: 2;
+    border-color: #1c2e57;
+    border-style:solid ;
+    padding: 10px;
+    outline: none;
+    font-family: 'Spongition';
+     border-radius: 10px; 
+}
+
+#cnt-btn2{
+    background-color: #1c2e57;
+    color:#e1e1e1;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    font-family:"Spongition";
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-d {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 30px auto;
+  font-family: "Spongition";
+}
+.contact1{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #0e1328, #1c2e57);
+    padding: 50px;
+}
+
+#address {
+  flex: 1 1 300px;
+  box-sizing: border-box;
+  min-width: 250px;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #e1e1e1;
+  border-radius: 15px;
+  color: #1c2e57;
+}
+
+
+#in1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#in2{
+    margin-top: 25px;
+    max-width: 400px;
+}
+#iframe{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+/* Make form layout stack vertically on smaller screens */
+@media(max-width:800px){
+    .hideOnmobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+  #in1 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .contact-d {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #address {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #i1, #i2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #i1 input,
+  #i2 input,
+  #textarea {
+    width: 100%;
+  }
+
+  #textarea {
+    height: 150px;
+  }
+
+  .form {
+    padding: 20px;
+    margin: 0 20px;
+  }
+
+  form {
+    margin: 20px;
+    flex-direction: column;
+  }
+}
+
+
+/* Optional: Improve readability on very small screens */
+@media screen and (max-width: 600px) {
+ 
+
+  #cnt-btn2 {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #address {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-d {
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  #iframe {
+    margin: 20px;
+  }
+}
+
+
+
+
+
+
+
+
