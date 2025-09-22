@@ -230,10 +230,12 @@ ul li:hover ul.dropdown {
     margin-top: 50px;
     cursor: pointer;
 }
+
 #cnt-btn:hover{
     background-color: #0e1328;
     color: #e1e1e1;
 }
+
 .small-description-div{
     display: flex;
     max-width: 1720px;
@@ -441,4 +443,5 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
+
 
