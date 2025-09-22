@@ -6,6 +6,19 @@ body{
     background-color: rgb(232, 232, 232);
     min-height: 100vh ;
 }
+
+
+
+.menu-button{
+    cursor: pointer;
+}
+
+.menu-hide{
+    cursor: pointer;
+}
+
+
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -23,6 +36,9 @@ body{
 }
 
 
+
+
+
 .sidebar li{
     width: 100%;
     margin-top: 20px;
@@ -31,11 +47,27 @@ body{
     width: 100%;
     color: #e1e1e1;
 }
-@media(max-width:768px){
+
+@media(max-width: 768px){
     .hideOnmobile{
         display: none;
     }
+    
+    .menu-button {
+        display: block;
+    }
 }
+
+@media(min-width: 769px){
+    .menu-button {
+        display: none;
+    }
+    
+    .sidebar {
+        display: none !important;
+    }
+}
+
 
 
 
@@ -197,6 +229,10 @@ ul li:hover ul.dropdown {
     font-weight: 900;
     margin-top: 50px;
     cursor: pointer;
+}
+#cnt-btn:hover{
+    background-color: #f49817;
+    color: #0e1328;
 }
 .small-description-div{
     display: flex;
