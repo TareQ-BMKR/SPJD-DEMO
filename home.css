@@ -275,19 +275,27 @@ h2#brands {
         align-items: center;
         text-align: center;
     }
-    .small-description-div #txt #p1{
-        font-size: 40px;
-        margin-bottom: 30px;
+     .small-description-div {
+        flex-direction: column;
+        align-items: center;   
+        text-align: center;    
+        gap: 20px;             
     }
-    .small-description-div{
-                flex-direction: column;
-        align-items: center;
-        
+
+    .small-description-div #txt {
+        max-width: 90%;
     }
-     .small-description-div #img-side{
-        width: 500px;
+
+    .small-description-div #img-side {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
-    
+
+    .small-description-div #img-side img {
+        max-width: 90%;
+        height: auto;
+    }
     
     #head p {
         justify-content: center;
@@ -329,21 +337,6 @@ h2#brands {
         text-align: center;
     }
   
-   .small-description-div #txt #p1{
-        font-size: 1%;
-        margin-bottom: 30px;
-    }
-    .small-description-div{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-     .small-description-div #img-side{
-        width: 120px;
-    }
-    
-    
-    
     #iframe iframe {
         height: 250px;
     }
@@ -367,4 +360,5 @@ h2#brands {
 html, body {
     overflow-x: hidden;
     width: 100%;
+
 }
